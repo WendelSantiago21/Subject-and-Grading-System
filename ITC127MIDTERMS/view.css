@@ -1,0 +1,301 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin:auto;
+    padding: auto;
+    background-color: #f5f5f5;
+    padding-bottom:120px;
+    overflow-x: hidden;
+}
+header {
+    background-color: #1F2833;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #1F2833;
+    font-weight:bold;
+}
+
+.topnav a {
+    margin-top: 20px;
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.topnav a:hover {
+    background: #FFE45C;
+    color: black;
+    transform: scale(1.05, 1);
+    transition: .3s;
+}
+
+.topnav .dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.topnav .dropdown .dropbtn {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.topnav .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.topnav .dropdown:hover .dropdown-content {
+    display: block;
+}
+.header {
+background-color: #333;
+color: #fff;
+padding: 20px 0;
+text-align: center;
+}
+
+.container {
+max-width: 800px;
+margin: 20px auto;
+padding: 20px;
+background-color: #fff;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.logo {
+position:absolute;
+top: 10px;
+right: 0;
+width: 50px;
+height: 60px;
+background-image: url('./img/logo1.svg');
+background-size: contain;
+background-repeat: no-repeat;
+border-radius: 50%;
+margin-right: 400px;
+}
+.reglogo {
+position:absolute;
+top: 10px;
+right: 0;
+width: 50px;
+height: 60px;
+background-image: url('./img/logo1.svg');
+background-size: contain;
+background-repeat: no-repeat;
+border-radius: 50%;
+margin-right: 480px;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+    margin-right: 10px;
+}
+table {
+    background-color: #d4d4d4;
+    width: 100%;
+    border-collapse: absolute;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #000000;
+    font-weight: 50px;
+    color: #000000;
+    position: relative;
+}
+th {
+    background-color: #F88379;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+tr {
+    font-weight: 50px;
+    color: #000000;
+}
+
+th:before,
+td:before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    background: linear-gradient(45deg, rgba(255,255,255,0.5), rgba(0,0,0,0.1)); 
+    z-index: -1; 
+}
+.profile-picture {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom:10px;
+    object-fit: cover;
+    border:none;
+    box-shadow:none;
+}
+.username {
+    color: white;
+    font-size: 18px;
+    margin-left: 1100px; 
+    display: inline-block;
+}
+.regusername{
+    color: white;
+    font-size: 18px;
+    margin-left: 1070px; 
+    display: inline-block;
+}
+.stuhamburger-icon {
+    font-size: 18px;
+    color: white; 
+    border-radius: 50%;
+    padding: 6px;
+    position: absolute;
+    bottom:20px;
+    right:20px; 
+}
+
+.stuprofile-picture {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom:10px;
+    object-fit: cover;
+    border:none;
+    box-shadow:none;
+}
+.stuusername {
+    color: white;
+    font-size: 18px;
+    margin-left: 1190px; 
+    display: inline-block;
+}
+.username {
+    color: white;
+    font-size: 18px;
+    margin-left: 1090px; 
+    display: inline-block;
+}
+.stulogo {
+    position:absolute;
+    top:0;
+    right: 0;
+    width: 50px;
+    height: 80px;
+    background-image: url('./img/logo1.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-right: 510px;
+    margin-top: 20px;
+}
+.stuprofile-picture-container {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    margin-bottom:50px;
+}
+.stuprofile-picture {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin-bottom:10px;
+    object-fit: cover;
+    border:none;
+    box-shadow:none;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #45A29E;
+    padding: 10px 0;
+    overflow: hidden;
+}
+.social-media {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    background-color: #45A29E;
+    position: fixed;
+    bottom: 70px;
+    left: 0;
+    width: 100%;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.social-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.student-info {
+    text-align: center;
+}
+
+.info-heading {
+    color: #000000;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.info-details {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-details p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.info-details strong {
+    color: #000000;
+}

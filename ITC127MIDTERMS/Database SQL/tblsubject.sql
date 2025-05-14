@@ -1,0 +1,93 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Apr 23, 2024 at 02:37 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.1.25
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `itc127-2b-2024`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tblsubject`
+--
+
+CREATE TABLE `tblsubject` (
+  `subjectcode` varchar(20) NOT NULL,
+  `description` varchar(50) NOT NULL,
+  `unit` varchar(5) NOT NULL,
+  `course` varchar(100) NOT NULL,
+  `prerequisite1` varchar(50) NOT NULL,
+  `prerequisite2` varchar(50) NOT NULL,
+  `prerequisite3` varchar(50) NOT NULL,
+  `createdby` varchar(50) NOT NULL,
+  `datecreated` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data for table `tblsubject`
+--
+
+INSERT INTO `tblsubject` (`subjectcode`, `description`, `unit`, `course`, `prerequisite1`, `prerequisite2`, `prerequisite3`, `createdby`, `datecreated`) VALUES
+('CS210', 'DISCRETE STRUCTURE 1', '3', 'BACHELOR OF SCIENCE IN COMPUTER SCIENCE', '', '', '', 'admin', '2024-04-22'),
+('CS211', 'OBJECT ORIENTED PROGRAMMING', '5', 'BACHELOR OF SCIENCE IN COMPUTER SCIENCE', 'ITC120', 'ITC111', '', 'admin', '2024-04-22'),
+('CS221', 'DIGITAL DESIGN', '5', 'BACHELOR OF SCIENCE IN COMPUTER SCIENCE', '', '', '', 'admin', '2024-04-22'),
+('CS222', 'COMPUTER ARCHITECTURE', '5', 'BACHELOR OF SCIENCE IN COMPUTER SCIENCE', '', '', '', 'admin', '2024-04-22'),
+('CS223', 'DISCRETE STRUCTURE 2', '5', 'BACHELOR OF SCIENCE IN COMPUTER SCIENCE', 'cs210', '', '', 'admin', '2024-04-22'),
+('CS224', 'NETWORKS AND COMMUNICATION', '5', 'BACHELOR OF SCIENCE IN COMPUTER SCIENCE', '', '', '', 'admin', '2024-04-22'),
+('CS310', 'SOFTWARE ENGINEERING 1', '3', 'BACHELOR OF SCIENCE IN COMPUTER SCIENCE', '', '', '', 'admin', '2024-04-22'),
+('CS311', 'COMPUTER PROGRAMMING 3', '5', 'BACHELOR OF SCIENCE IN COMPUTER SCIENCE', '', '', '', 'admin', '2024-04-22'),
+('CS312', 'ALGORITHMS AND COMPLEXITY', '3', 'BACHELOR OF SCIENCE IN COMPUTER SCIENCE', '', '', '', 'admin', '2024-04-22'),
+('CS313', 'ELECTIVE1', '3', 'BACHELOR OF SCIENCE IN COMPUTER SCIENCE', '', '', '', 'admin', '2024-04-22'),
+('CS314', 'LINEAR ALGEBRA', '3', 'BACHELOR OF SCIENCE IN COMPUTER SCIENCE', '', '', '', 'admin', '2024-04-22'),
+('CS320', 'SOFTWARE ENGINEERING 2', '5', 'BACHELOR OF SCIENCE IN COMPUTER SCIENCE', '', '', '', 'admin', '2024-04-22'),
+('CS321', 'PROGRAMMING LANGUAGES', '5', 'BACHELOR OF SCIENCE IN COMPUTER SCIENCE', '', '', '', 'admin', '2024-04-22'),
+('CS322', 'ELECTIVE 2', '5', 'BACHELOR OF SCIENCE IN COMPUTER SCIENCE', '', '', '', 'admin', '2024-04-22'),
+('CS411', 'THESIS 1', '5', 'BACHELOR OF SCIENCE IN COMPUTER SCIENCE', '', '', '', 'admin', '2024-04-22'),
+('CS412', 'ELECTIVE 3', '5', 'BACHELOR OF SCIENCE IN COMPUTER SCIENCE', '', '', '', 'admin', '2024-04-22'),
+('CS413', 'AUTOMATA THEORY', '3', 'BACHELOR OF SCIENCE IN COMPUTER SCIENCE', '', '', '', 'admin', '2024-04-22'),
+('CS421', 'THESIS 2', '5', 'BACHELOR OF SCIENCE IN COMPUTER SCIENCE', 'CS411', '', '', 'admin', '2024-04-22'),
+('CS422', 'HUMAN COMPUTER INTERACTION', '5', 'BACHELOR OF SCIENCE IN COMPUTER SCIENCE', 'cs311', 'cs321', 'cs412', 'admin', '2024-04-22'),
+('gcas01', 'rizal', '2', 'BACHELOR OF SCIENCE IN COMPUTER SCIENCE', '', '', '', 'admin', '2024-04-22'),
+('ITC 122', 'INTRO TO WEB DESIGN', '5', 'BACHELOR OF SCIENCE IN COMPUTER SCIENCE', 'ITC112', '', '', 'admin', '2024-04-22'),
+('ITC 127', 'ADVANCE DATABASE', '5', 'BACHELOR OF SCIENCE IN COMPUTER SCIENCE', 'ITC124', '', '', 'admin', '2024-04-22'),
+('ITC 129', 'COMPUTER ORG', '5', 'BACHELOR OF SCIENCE IN COMPUTER SCIENCE', '', '', '', 'admin', '2024-04-22'),
+('ITC110', 'INTRO TO COMPUTING', '5', 'BACHELOR OF SCIENCE IN COMPUTER SCIENCE', '', '', '', 'admin', '2024-04-22'),
+('ITC111', 'COMPUTER PROGRAMMING1', '5', 'BACHELOR OF SCIENCE IN COMPUTER SCIENCE', '', '', '', 'admin', '2024-04-22'),
+('ITC112', 'INTRO TO GRAPHICS AND DESIGN', '5', 'BACHELOR OF SCIENCE IN COMPUTER SCIENCE', '', '', '', 'admin', '2024-04-22'),
+('ITC120', 'COMPUTER PROGRAMMING 2', '5', 'BACHELOR OF SCIENCE IN COMPUTER SCIENCE', 'ITC111', '', '', 'admin', '2024-04-22'),
+('ITC121', 'OPERATING SYSTEM', '5', 'BACHELOR OF SCIENCE IN COMPUTER SCIENCE', '', '', '', 'admin', '2024-04-22'),
+('ITC123', 'APPLICATION DEV', '5', 'BACHELOR OF SCIENCE IN COMPUTER SCIENCE', '', '', '', 'admin', '2024-04-22'),
+('ITC124', 'FUNDAMENTALS OF DATABASE', '5', 'BACHELOR OF SCIENCE IN COMPUTER SCIENCE', '', '', '', 'admin', '2024-04-22'),
+('ITC125', 'DATA STRUCTURE AND ALGORITHM', '5', 'BACHELOR OF SCIENCE IN COMPUTER SCIENCE', '', '', '', 'admin', '2024-04-22'),
+('ITC126', 'INFORMATION MANAGEMENT', '3', 'BACHELOR OF SCIENCE IN COMPUTER SCIENCE', '', '', '', 'admin', '2024-04-22');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `tblsubject`
+--
+ALTER TABLE `tblsubject`
+  ADD PRIMARY KEY (`subjectcode`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
